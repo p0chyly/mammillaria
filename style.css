@@ -1,42 +1,27 @@
 h1{
-font-family: 'Times New Roman', serif;
-color: #034450;
-font-size: 40px;
-}
-
-h2{
-font-family: 'Times New Roman', serif;
-color: #012253;
+font-family: cursive;
+color: #108f7a;
 font-size: 30px;
 }
 
-.uk-container {
-  display:flow-root;
-  box-sizing:content-box;
-  max-width:1200px;
-  margin-left:auto;
-  margin-right:auto;
-  padding-left:15px;
-  padding-right:15px
-}
-
-menu {
-  display: flex;
-  flex-direction: column;
-
-  & li {
-    list-style-type: none;
-  }
-}
-
-p {
-  font-size: 30px;
+.label1{
+  color: #000000;
+  font-family: "M PLUS U", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 
-mark {
-  background: rgb(255, 141, 47);
+.catalogo{
+  width:300px;
+  background-color: #dfffe6;
+  
+  /* border-color: #093a27;
+  border-style: solid;
+  padding-right: 10px;
+  border-radius: 1%; */
 }
+
 
 
 /* div {
