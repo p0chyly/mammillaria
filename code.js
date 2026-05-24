@@ -32,3 +32,4 @@ document.addEventListener("DOMContentLoaded", () => {
   select1.addEventListener("change", ordenarProductos);
   ordenarProductos();
 });
+
