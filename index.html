@@ -12,70 +12,119 @@
 
   <!-- CSS ESTILIZADO -->
   <link rel="stylesheet" href="style.css">
+  <script src="code.js"></script>
   
   <!-- ESTILO -->
-  <!-- H1 -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap" rel="stylesheet">
-  <!-- LABEL1 -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <style> body{background-color: #d4ffe6;} </style>
 
 
 <!-- CUERPO DEL SITIO -->
 <body>
 
-  <h1>Catálogo</h1>
-  <main style="float: none;">  
-    <center>
-    <!-- BARRA VERDE OSCURA -->
-    <div style="background-color:#4d808d; padding: 5px 0px 5px 0px; "> 
-      <button>ACERCA DE NOSOTROS</button>
-      <button>ENCICLOPEDIA HORTÍCOLA</button>
-      <button>CONTÁCTANOS</button>
-    </div>
-    </center>
+  <header class="header">
+    <!-- <h1 class="logo">Catálogo</h1> -->
+    <nav class="navegacion container">
+      <!-- BARRA VERDE OSCURA -->
+        <button class="navBotones"><a class="boton" href="#">ACERCA DE NOSOTROS</a></button>
+        <button class="navBotones"><a class="boton" href="#">ENCICLOPEDIA HORTÍCOLA</a></button>
+        <button class="navBotones"><a class="boton" href="#">CONTACTANOS</a></button>
+    </nav>
+  </header>
 
+  <main class="products container" id="lista1">  
+    <!-- h2 -->
       <!-- ORDENAR PRODUCTOS -->
-      <select name="ordenarcatalogo" id="ordenarcatalogo" class="label1" style="scale: 15vw;">
+      <select name="ordenarcatalogo" id="select1" class="ordenarcatalogo">
         <option value="0">PRECIO MENOR A MAYOR</option>
         <option value="1">PRECIO MAYOR A MENOR</option>
         <option value="2">DE LA A-Z</option>
         <option value="3">DE LA Z-A</option>
       </select>
 
-      <center>
-      <section class="contenedorCatalogo" style="padding-top: 10px; margin: 0px 5vw 0px 5vw;">
-        <div class="contenedorProducto">
-          <img src="https://live.staticflickr.com/83/267129769_7feb14cf8a_b.jpg" alt="" class="producto">
-          <h3>PLANTA NUMERO 1</h3>
-          <p>8000</p>
+      <div class="product-content">
+
+        <!-- CADA PRODUCTO -->
+        <div class="product">
+          <a href="#" data-id: 1>
+            <img src="imagenes/aloe.jpg" alt="">
+            <div class="product-txt">
+            <h3>Aloe Vera</h3>
+          </a>
+            <p class="nombrealt"> Nombre alternativo</p>
+            <p class="precio">$1000</p>
+          </div>
         </div>
-        <div class="contenedorProducto">
-          <img src="https://live.staticflickr.com/83/267129769_7feb14cf8a_b.jpg" alt="" class="producto">
-          <h3>PLANTA NUMERO 2</h3>
-          <p>9000</p>
+
+        <div class="product">
+          <a href="#" data-id: 2>
+            <img src="imagenes/crassula-muscosa.jpg" alt="">
+            <div class="product-txt">
+            <h3>Crassula Muscosa</h3>
+          </a>
+            <p class="nombrealt"> Nombre alternativo</p>
+            <p class="precio">$8000</p>
+          </div>
         </div>
-        <div class="contenedorProducto">
-          <img src="https://live.staticflickr.com/83/267129769_7feb14cf8a_b.jpg" alt="" class="producto">
-          <h3>PLANTA NUMERO 2</h3>
-          <p>9000</p>
+
+        <div class="product">
+          <a href="#" data-id: 3>
+            <img src="imagenes/echinopsis-oxygona.jpg" alt="">
+            <div class="product-txt">
+            <h3>Echinopsis Oxygona</h3>
+          </a>
+            <p class="nombrealt"> Nombre alternativo</p>
+            <p class="precio">$500</p>
+          </div>
         </div>
-        <div class="contenedorProducto">
-          <img src="https://live.staticflickr.com/83/267129769_7feb14cf8a_b.jpg" alt="" class="producto">
-          <h3>PLANTA NUMERO 2</h3>
-          <p>9000</p>
+
+        <div class="product">
+          <a href="#" data-id: 4>
+            <img src="imagenes/graptopetalum-mendozae.jpg" alt="">
+            <div class="product-txt">
+            <h3>Graptopetalum Mendozae</h3>
+          </a>
+            <p class="nombrealt"> Nombre alternativo</p>
+            <p class="precio">$1000</p>
+          </div>
         </div>
-        <div class="contenedorProducto">
-          <img src="https://live.staticflickr.com/83/267129769_7feb14cf8a_b.jpg" alt="" class="producto">
-          <h3>PLANTA NUMERO 2</h3>
-          <p>9000</p>
+
+        <div class="product">
+          <a href="#" data-id: 5>
+            <img src="imagenes/graptopetalum-paraguayense.jpg" alt="">
+            <div class="product-txt">
+            <h3>Graptopetalum Paraguayense</h3>
+          </a>
+            <p class="nombrealt"> Nombre alternativo</p>
+            <p class="precio">$3000</p>
+          </div>
         </div>
-      </section>
-      </center>
+
+        <div class="product">
+          <a href="#" data-id: 6>
+            <img src="imagenes/aloe.jpg" alt="">
+            <div class="product-txt">
+            <h3>Nombre del producto</h3>
+          </a>
+            <p class="nombrealt"> Nombre alternativo</p>
+            <p class="precio">$1100</p>
+          </div>
+        </div>
+
+        <div class="product">
+          <a href="#" data-id: 4>
+            <img src="imagenes/graptopetalum-mendozae.jpg" alt="">
+            <div class="product-txt">
+            <h3>Zazazazaza</h3>
+          </a>
+            <p class="nombrealt"> Nombre alternativo</p>
+            <p class="precio">$89999999.99999</p>
+          </div>
+        </div>
+
+<!-- aca se termina el div del contenedor de productos -->
+      </div>
+      
+      
       
   </main>
 
