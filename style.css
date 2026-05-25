@@ -44,7 +44,7 @@ a{
 select{
   margin: 5px;
   transition-duration: 0.5s;
-  background-color: rgb(253, 255, 230);
+  background-color: rgb(255, 255, 255);
   padding: 3px
 }
 
@@ -72,7 +72,7 @@ select:hover{
 
 .logo{
   font-size: 30px;
-  color: #d8c794;
+  color: #ffffff;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -154,16 +154,32 @@ select:hover{
   align-items: center;
   padding: 1px;
   }
-
-
 }
 
-@media (max-width: 500px){
+@media (max-width: 450px){
   .product-content{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  }
+
+  .navegacion{
+  position: relative;
+  align-items: center;
 }
+
+  .navBotones{
+    padding: 2px;
+    margin: 2px;
+    z-index: 1;
+}
+
+  .header{
+  display: grid;
+  align-items: center;
+  padding: 1px;
+  }
+
 }
 
 
